@@ -46,6 +46,14 @@ imageD6.addEventListener('click', function(){
     console.log("D6 Clicked!");
     d6RollFunction();
 })
+d6OneImage.addEventListener('click', function(){
+    console.log("Double 6 Clicked!");
+    d6RollFunction();
+})
+d6TwoImage.addEventListener('click', function(){
+    console.log("Double 6 Clicked!");
+    d6RollFunction();
+})
 imageD12.addEventListener('click', function(){
     console.log("D12 Clicked!");
     d12RollFunction();
@@ -97,14 +105,23 @@ function d6RollFunction(){
     console.log(sixes);
 }
 
-// function doubleD6RollFunction(){
-//     let result = getRandomNumber(6);
-//     console.log(result);
-//     imageD6.src = `./images/d6/${result}.png`;
-//     sixes.push(result);
-//     meanD6.innerText = getMean(sixes);
-//     console.log(sixes);
-// }
+function firstDoubleD6RollFunction(){
+    let result = getRandomNumber(6);
+    console.log(result);
+    d6OneImage.src = `./images/d6/${result}.png`;
+    doubleSixes.push(result);
+    doubleD6Mean.innerText = getMean(doubleSixes);
+    console.log(doubleSixes);
+}
+
+function secondDoubleD6RollFunction(){
+    let result = getRandomNumber(6);
+    console.log(result);
+    d6OTwoImage.src = `./images/d6/${result}.png`;
+    doubleSixes.push(result);
+    doubleD6Mean.innerText = getMean(doubleSixes);
+    console.log(doubleSixes);
+}
 function d12RollFunction(){
     let result = getRandomNumber(12);
     console.log(result);
