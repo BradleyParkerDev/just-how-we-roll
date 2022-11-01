@@ -49,10 +49,12 @@ imageD6.addEventListener('click', function(){
 d6OneImage.addEventListener('click', function(){
     console.log("Double 6 Clicked!");
     firstDoubleD6RollFunction();
+    secondDoubleD6RollFunction();
 })
 d6TwoImage.addEventListener('click', function(){
     console.log("Double 6 Clicked!");
     secondDoubleD6RollFunction();
+    firstDoubleD6RollFunction();
 })
 imageD12.addEventListener('click', function(){
     console.log("D12 Clicked!");
